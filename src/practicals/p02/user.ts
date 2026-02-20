@@ -1,7 +1,7 @@
 export class User {
     firstname: string;
     lastname: string
-    private age: number;
+    private _age: number = 0;
     static BIRTH_YEAR: number ;
 
     constructor(firstname: string , lastname: string , age: number ) {
@@ -27,11 +27,11 @@ export class User {
     }
 
     set setAge(age: number) {
-        this.age = age;
+        this._age = age;
     }
 
     get getAge(): number {
-        return this.age;
+        return this._age;
     }
 
     get FullName(): string {
