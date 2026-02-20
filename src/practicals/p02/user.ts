@@ -7,7 +7,7 @@ export class User {
     constructor(firstname: string , lastname: string , age: number ) {
         this.firstname = firstname;
         this.lastname = lastname;
-        this.age = age;
+        this._age = age;
     }
 
     set setFirstname(firstname: string) {
