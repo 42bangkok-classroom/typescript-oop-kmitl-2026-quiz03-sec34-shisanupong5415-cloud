@@ -1,10 +1,10 @@
 export class User {
     firstname: string;
-    lastname: string
+    lastname: string;
     private _age: number = 0;
     static BIRTH_YEAR: number = 2000;
 
-    constructor( ) {
+    constructor() {
         this.firstname = "";
         this.lastname = "";
         this._age = 0;
@@ -27,6 +27,6 @@ export class User {
     }
 
     getFullName(): string {
-        return `${this.firstname}${this.lastname}`;
+        return this.firstname && this.lastname ? `${this.firstname} ${this.lastname}` : '';
     }
 }
