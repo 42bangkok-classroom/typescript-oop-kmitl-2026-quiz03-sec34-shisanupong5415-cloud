@@ -3,4 +3,7 @@ export class OnlineCourse {
   public maxStudents : number
   private enrolledStudents : number
   private isOpen : boolean
+
+  constructor(courseName: string , maxStudents: number) {
+}                         
 }
