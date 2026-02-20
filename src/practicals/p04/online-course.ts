@@ -4,6 +4,10 @@ export class OnlineCourse {
   private enrolledStudents : number
   private isOpen : boolean
 
-  constructor(courseName: string , maxStudents: number) {
-}                         
+  constructor(courseName: string , maxStudent: number , enrolledStudents: number = 0 ,isOpen: boolean = true) {
+        this.courseName = courseName;
+this.maxStudents = maxStudent;
+
+
+  }
 }
