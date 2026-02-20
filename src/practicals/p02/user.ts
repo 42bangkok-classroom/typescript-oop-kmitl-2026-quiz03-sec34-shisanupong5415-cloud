@@ -4,37 +4,29 @@ export class User {
     private _age: number = 0;
     static BIRTH_YEAR: number ;
 
-    constructor(firstname: string , lastname: string , age: number ) {
+    constructor( ) {
+        this.firstname = "";
+        this.lastname = "";
+        this._age = 0;
+    }
+
+    setFirstname(firstname: string) {
         this.firstname = firstname;
-        this.lastname = lastname;
-        this._age = age;
     }
 
-    set setFirstname(firstname: string) {
-        this.firstname = firstname;
-    }
-
-    get getFirstname(): string {
-        return this.firstname;
-    }
-
-    set setLastname(lastname: string) {
+    setLastname(lastname: string) {
         this.lastname = lastname;
     }
 
-    get getLastname(): string {
-        return this.lastname;
-    }
-
-    set setAge(age: number) {
+    setAge(age: number) {
         this._age = age;
     }
 
-    get getAge(): number {
+    getAge(): number {
         return this._age;
     }
 
-    get FullName(): string {
+    getFullName(): string {
         return `${this.firstname} ${this.lastname}`;
     }
 }
