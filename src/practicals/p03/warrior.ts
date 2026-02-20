@@ -13,7 +13,7 @@ export class Warrior extends Character {
     }
 
      override receiveDamage(damage: number): void {
-        const reducedDamage = damage * 0.65;
+        const reducedDamage = damage * 0.9;
         super.receiveDamage(reducedDamage);
     }
 }
